@@ -1,0 +1,31 @@
+{
+  "name": "cpp-enum-classify",
+  "displayName": "C++ Enum → Enum Class + kStyle",
+  "version": "0.0.1",
+  "publisher": "you",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "activationEvents": [
+    "onCommand:extension.enumsToEnumClassKStyle"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.enumsToEnumClassKStyle",
+        "title": "C++: Convert enum → enum class & rename to kStyle"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.enumsToEnumClassKStyle",
+        "key": "ctrl+shift+k",
+        "when": "editorTextFocus && editorLangId == cpp"
+      }
+    ]
+  },
+  "main": "./extension.js",
+  "devDependencies": {
+    "@vscode/vsce": "^3.7.0"
+  }
+}
